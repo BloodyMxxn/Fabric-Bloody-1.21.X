@@ -2,6 +2,7 @@ package net.bloodymxxn.bloodymod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.bloodymxxn.bloodymod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,5 +13,6 @@ public class BloodyMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		ModItems.registerModItems();
 	}
 }
