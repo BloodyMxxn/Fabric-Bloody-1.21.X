@@ -1,5 +1,7 @@
 package net.bloodymxxn.bloodymod;
 
+import net.bloodymxxn.bloodymod.block.ModBlocks;
+import net.bloodymxxn.bloodymod.item.ModItemGroups;
 import net.fabricmc.api.ModInitializer;
 
 import net.bloodymxxn.bloodymod.item.ModItems;
@@ -12,7 +14,9 @@ public class BloodyMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
